@@ -1,169 +1,99 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sAsh</title>
-
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
-    <link rel="apple-touch-icon" href="favicon/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#051720">
-    <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
-    <meta name="msapplication-config" content="favicon/browserconfig.xml">
-
-    <style>
-        
-        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            list-style: none;
-            text-decoration: none;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background-color: #051720;
-            color: #fafbfd;
-        }
-
-        @media screen and (max-width: 768px) {
-            body #unknown (1) img {
-                width: 100vw;
-                height: auto;
-            }
-            body #linhas-inferiores img {
-                width: 100vw;
-                height: auto;
-            }
-        }
-
-        @media screen and (min-width: 769px) {
-            body #linhas-superiores img {
-                width: 50vw;
-                height: auto;
-            }
-            body #linhas-inferiores img {
-                width: 50vw;
-                height: auto;
-            }
-        }
-
-        body #linhas-superiores img {
-            position: fixed;
-            top: 0;
-            left: 0;
-            opacity: 0.1;
-            z-index: -1;
-        }
-
-        body #linhas-inferiores img {
-            transform: scale(-1);
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            opacity: 0.1;
-            z-index: -1;
-        }
-
-        body #wrapper {
-            min-height: 100vh;
-            max-width: 720px;
-            margin: auto;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        body #wrapper .header {
-            padding: 1.5rem 0;
-        }
-
-        body #wrapper .header .modelev-logo {
-            width: 90px;
-            height: 90px;
-            margin-bottom: 10px;
-            border-radius: 50%;
-        }
-
-        body #wrapper li a {
-            display: block;
-            color: #051720;
-            background-color: #33a1da;
-            padding: 18px 57px;
-            transition: 0.3s;
-        }
-
-        body #wrapper li a:hover {
-            background-color: #49cdc9;
-            transition: 0.3s;
-        }
-
-        body #wrapper li {
-            margin: .9rem;
-        }
-
-        body #wrapper .spacer {
-            display: block;
-            padding: 1.5rem 0;
-        }
-
-        body #wrapper .footer {
-            margin-bottom: 1rem;
-        }
-
-        body #wrapper .footer .footer-img {
-            width: 128px;
-            height: auto;
-        }
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="description" content="sAsh site web">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sAsh</title>
+  <!-- Favicon -->
+  <link rel="png"
+    href="https://media.discordapp.net/attachments/1047992799737434132/1058356220987187210/favicon-16x16.png" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Core theme CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <!-- Parallax Pixel Background Animation -->
+  <section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </section>
+  <!-- End of Parallax Pixel Background Animation -->
 
-    <div id="linhas-superiores">
-        <img src="assets/unknown (1).png">
+  <a id="profilePicture" href="#popup">
+    <img
+      src="https://media.discordapp.net/attachments/1057381347745874020/1058353974325026866/IMG_7206.jpg"
+      alt="Profile Picture">
+  </a>
+
+  <div class="overlay" id="popup">
+    <div class="popup">
+      <div class="popup-photo">
+        <a href="https://media.discordapp.net/attachments/963593213078278154/1036303114191523910/IMG_20221030_015920_389.jpg"
+          target="_blank">
+          <img
+            src="https://media.discordapp.net/attachments/963593213078278154/1036303114191523910/IMG_20221030_015920_389.jpg"
+            alt="Profile Picture">
+        </a>
+      </div>
+      <div class="popup-quote">
+        Pourquoi t'es la ?
+      </div>
+      <a class="popup-close" onclick="history.back()">&times;</a>
     </div>
+  </div>
 
-    <div id="linhas-inferiores">
-        <img src="assets/unknown (1).png">
-    </div>
+  <div id="userName">
+    sAsh
+  </div>
 
-    <div id="wrapper">
-        <div class="header">
-            <img class="modelev-logo" src="assets/ptdr.png"><br>
-            sAsh
+  <div id="links">
+    <a class="link" href="https://" target="_blank">
+      <i class="fas fa-shopping-cart">&nbsp;</i> SHOP
+    </a>
+    <a class="link" href="https://discord.gg/backup" target="_blank">
+      <i class="fab fa-discord">&nbsp;</i>DISCORD
+    </a>
+    <a class="link" href="https://Muppet-Music.ml" target="_blank">
+      <i class="fa fa-play-circle">&nbsp;</i>MUPPET
+    </a>
+    <a class="link" href="https://instagram.com/" target="_blank">
+      <i class="fab fa-brands fa-instagram">&nbsp;</i>INSTAGRAM
+    </a>
+    <a class="link" href="https://twitter.com/" target="_blank">
+      <i class="fab fa-brands fa-twitter">&nbsp;</i>TWITTER
+    </a>
+    <a class="link" href="https://twitch.com/amztv_" target="_blank">
+      <i class="fab fa-brands fa-twitch">&nbsp;</i>TWITCH
+    </a>
+    <div id="userName">
+      </turbo-frame>
+
+      <div class="max-w-5xl mx-auto pb-8 px-4 sm:px-6 lg:px-8" style="font-family: &#39;Poppins&#39;, sans-serif;">
+        <div data-controller="clicks">
+          <turbo-frame id="embedding_10903_block">
+            <div class="mt-12 md:mt-14">
+
+              <div class="relative overflow-hidden shadow-lg rounded-lg">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0HZE4G5gFbtuKsMa3w7hp8?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+              </div>
+
+            </div>
+          </turbo-frame>
+          <turbo-frame id="teammate_647_block">
+            <div class="mt-12 md:mt-14">
+            </div>
+          </turbo-frame>
         </div>
-
-        <li><a href="https://discord.gg/backup">DISCORD</a></li>
-
-        <li><a href="https://www.twitch.tv/amztv_">TWITCH</a></li>
-
-        <li><a href="#link3">Link 3</a></li>
-        
-        <li><a href="#link4">Link 4</a></li>
-
-        <div class="spacer"></div>
-        <div class="footer">
-        </div>
-    </div>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6ipNKErSfsuhF0PwGN84dV?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div id="hashtag">
+        by sAsh
+      </div>
 </body>
+
 </html>
