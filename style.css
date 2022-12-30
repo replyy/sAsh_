@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     font-family: var(--font);
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    background-image: url('https://media.discordapp.net/attachments/963593213078278154/1028297809813844088/unknown.png?width=1025&height=683');
+    background-image: url('https://media.discordapp.net/attachments/1008579180075692062/1057162947773861908/Nekzy-Social-Page.png');
     opacity: 0;
     animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
     animation-fill-mode: forwards;
